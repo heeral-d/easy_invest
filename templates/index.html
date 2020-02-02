@@ -198,8 +198,31 @@
             </div>
           </div>
 
+          {% for i,j,k,l,m,n,o,p,q in mylist %}
+          <center>
+          <div class="col-lg-6 mb-4">
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">{{ i }}</h6>
+            </div>
+            <div class="card-body"> 
+              <p> Category : {{k}} </p>
+              <p> Funding Required : {{m}}</p>
+              
+              <a href="#" class="btn btn-success btn-circle"> Add to watch list
+                <i class="fas fa-check"></i>
+              </a>
 
+                <div class="text-center"> 
+
+                <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="{% static 'img/undraw_posting_photo.svg'%}" alt="">
+                </div>
+                <p>{{ j }}</p>
+            </div>
+            </div>
+            </div></center>
           
+            {% endfor %}
 
 
 

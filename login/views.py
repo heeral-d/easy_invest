@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
+from django.contrib.sessions.models import Session
 
+global username
 
 # Create your views here.
 def login(request):
@@ -12,6 +14,7 @@ def login(request):
 
         if user is not None:
             auth.login(request,user)
+            request.session['username']=username
             return redirect('home')
         else:
             messages.info(request,'Invalid credentials')
@@ -19,8 +22,13 @@ def login(request):
     else:
         return render(request,'login.html')
 
+
+def dashboard(request):
+    return render(request, 'dashboard.html')
+
 def home(request):
-    return render(request, 'index.html')
+    return render(request, 'index.html',{'username':'root'})
+
 
 def register(request):
     print(request.method)
@@ -47,3 +55,5 @@ def register(request):
           
     else:    
         return render(request, 'register.html')
+
+

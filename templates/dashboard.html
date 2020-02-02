@@ -42,7 +42,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="/dashboard">
+        <a class="nav-link" href="/home">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>CRM Dashboard</span></a>
       </li>
@@ -111,12 +111,12 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Heeral Dedhia</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
                 <img class="img-profile rounded-circle" src="">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#"> 
+                <a class="dropdown-item" href="#">
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                   Profile
                 </a>
@@ -142,64 +142,100 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
+        
+        
+        
+        <div class="col-lg-8 mb-4">
 
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-          </div>
+            <!-- Illustrations -->
+            <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Name of start up</h6>
+            </div>
+            <div class="card-body">
+                <div class="row">
 
-          <!-- Content Row -->
-          <div class="row">
+                <div class="col-sm-4">
+                    
+                    <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Description</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="text-center">
+                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="{% static 'img/undraw_posting_photo.svg'%}" alt="">
+                        </div>
+                        <p>A start up which helps users connect with like-minded people based on their on-going projects.</p>
+                    </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-sm-8">
+                    <!-- Pie Chart -->
+        <div class="col-xl-7 col-lg-5">
+            <div class="card shadow mb-4">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
             
-            <!-- Watch List Card Example -->
-            <div class="col-xl-6 col-md-6 mb-4">
-              <div class="card border-left-info shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Watch List</div>
-                      <div class="row no-gutters align-items-center">
+            </div>
+            <!-- Card Body -->
+            <div class="card-body">
+                <div class="chart-pie pt-4 pb-2">
+                <canvas id="myPieChart"></canvas>
+                </div>
+                <div class="mt-4 text-center small">
+                <span class="mr-2">
+                    <i class="fas fa-circle text-primary"></i> Direct
+                </span>
+                <span class="mr-2">
+                    <i class="fas fa-circle text-success"></i> Social
+                </span>
+                <span class="mr-2">
+                    <i class="fas fa-circle text-info"></i> Referral
+                </span>
+                </div>
+            </div>
+            </div>
+                </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <!-- no. of backers -->
+                    
+                    <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-right">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Backed by </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">40,000</div>
+                        </div>
                         <div class="col-auto">
-                          
+                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
                         </div>
-                        <div class="col">
-                      
                         </div>
-                      </div>
                     </div>
-                    <div class="col-auto">
-                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+            
                     </div>
-                  </div>
+                
                 </div>
-              </div>
+                <pre>                     </pre>
+                <a href="#" class="btn btn-primary btn-circle btn-lg">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            
+                </div>
+            
             </div>
-
-            <!-- Investment history Card Example -->
-            <div class="col-xl-6 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Investment History</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-comments fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-           <!-- Card Header - Dropdown -->
-             
-           
 
             
-          </div>          </div>
             </div>
-          </div>
+            
+        </div>
 
-
-          
+        </div>
+        <!-- End of Main Content -->
 
 
 
@@ -263,3 +299,7 @@
 </body>
 
 </html>
+
+
+
+

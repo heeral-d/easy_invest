@@ -36,7 +36,7 @@ def dashboard(request):
     return render(request, 'dashboard.html')
 
 #def home(request):
-    return render(request, 'index.html',{'username':'root'})
+#   return render(request, 'index.html',{'username':'root'})
 
 
 def register(request):
